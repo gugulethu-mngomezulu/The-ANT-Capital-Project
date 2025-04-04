@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+body{
+    margin: 0px;
+}
+
+
+
+.account-circle{
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.images{
+    display: flex;
+    flex-direction: column ;
+}
+
+.number{
+    margin-top: 10px;
+}
+nav .logo{
+    width: 100px;
+    margin: 10px 0px 0px 10px;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 550px;
+    cursor: pointer;
+    
+}
+
+nav p{
+    cursor: pointer;
+}
+
+nav p:hover{
+    color: orange;
+}
+nav li:hover{
+    color: orange;
+}
+
+.home{
+  margin-right: 20px;
+}
+
+.blog-nav{
+    margin-right: 20px;
+ }
+
+  .about-nav{
+    margin-right: 20px;
+ }
+
+ .short-term-nav{
+    margin-right: 20px;
+ }
+
+ .purchase-nav{
+    margin-right: 20px;
+ }
+
+ 
+ 
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100vw;
+    color: white;
+  
+}
+
+.first-part{
+    background-image: url(assets/background-02.png);
+background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+ .overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.608);
+    
+} 
+
+.main-part h1 {
+    font-size: 125px;
+    color: white;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.main-part p{
+    font-size: 30px;
+    color: white;
+    margin: 50px 0px 0px 50px;
+}
+
+.box1 {
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:100%;
+}
+
+
+.box2{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+}
+
+.box2 p{
+    padding: 0px 5px 0px 5px;
+    margin-left: 20px;
+
+}
+.box3 {
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   border-style: double;
+   border-color: orange;
+   border:50%;
+}
+
+.po-boxes{
+    display: flex;
+    margin-left: 90px;
+    color: white;
+    
+}
+
+
+
+
+
+.POF h1{
+    margin-left: 140px;
+    color: rgb(89, 3, 146);
+}
+
+.para{
+    margin-left: 140px;
+    font-size: 20px;
+}
+
+.po-start{
+    font-size: 50px;
+}
+ .sub-headings{
+    color: rgb(89, 3, 146);
+} 
+
+.sub-headings img{
+    width: 100px;
+height: 100px;
+}
+
+.action-1-sect img{
+    width: 100px;
+    height: 100px;
+}
+
+.action-2-sect img{
+    width: 100px;
+    height: 100px;
+}
+
+.action-3-sect img{
+    width: 100px;
+    height: 100px;
+}
+
+.action-1-sect{
+    display: flex;
+}
+
+.action-2-sect{
+    display: flex;
+}
+
+.action-3-sect{
+    display: flex;
+}
+.steps{
+    display: flex;
+    margin-top: 50px;
+}
+
+.steps h1{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.steps button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:rgb(89, 3, 146) ;
+    border-radius: 25px;
+    margin-left: 100px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.steps button:hover{
+    background-color: orange;
+    color: black;
+}
+
+.stl-start{
+    font-size: 50px;
+   color: rgb(89, 3, 146);
+}
+
+
+.short-term-loans{
+    margin-left: 140px;
+}
+
+.seven-grand{
+    font-weight: 400;
+    }
+
+ .choose{
+    color:  rgb(89, 3, 146);;
+ }   
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.box4{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+   margin-left: 0px;
+}
+
+.box4 p{
+   padding-left: 50px;
+    
+}
+
+.box5{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+}
+
+.box5 h3{
+   padding: 0px 10px 0px 20px;
+}
+
+.box6{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+   
+}
+
+.box6 p{
+    padding-left: 49px;
+    padding-right: 20px;
+}
+
+.box7{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+   margin-top: 20px;
+   margin-left: 210px;
+}
+
+.box7 p{
+    padding-left: 49px;
+    padding-right: 15px;  
+}
+
+.box8{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+   margin-top: 20px;
+}
+
+.box8 p{
+    padding-left: 49px;
+    padding-right: 20px;
+}
+
+.box8 h3{
+    margin-top: 30px;
+}
+
+.box9{
+    background-color: rgb(89, 3, 146);
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+   border-color: orange;
+   border:50%;
+   margin-top: 20px;
+}
+
+.box9 p{
+    margin: 0px;
+}
+
+.box9 h3{
+    margin-bottom: 25px;
+}
+
+.short-term-loans button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:rgb(89, 3, 146) ;
+    border-radius: 25px;
+    
+    font-weight: 500;
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+.short-term-loans button:hover{
+    background-color: orange;
+    color: black;
+}
+
+.ways-to-apply img{
+width: 25px;
+height: 25px;
+margin-right: 10px;
+
+}
+
+.ways-to-apply h3{
+    font-size: 35px;
+    color: rgb(89, 3, 146);
+    font-weight: 300;
+}
+
+footer{
+    background-color:rgb(89, 3, 146);
+    width: 100vw;
+    color: grey;
+    margin-top: 20px;
+   }
+
+   .socials{
+    margin-top: 20px;
+    margin-left: 25px;
+   }
+
+   .socials img{
+    width: 36px;
+    height: 36px;
+   }
+
+footer ul{
+   
+    list-style-type: none;
+    text-decoration-line: underline;
+}
+
+.sign-up-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: red;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(225, 225, 225, .5);
+    background: transparent;
+    backdrop-filter: blur(100%);
+    margin-top: 20px;
+}
+
+.sign-up-box h2{
+    text-align: center;
+}
+
+.input-box{
+    width:310px;
+    margin: 30px 0px;
+    border-bottom: 2px solid #fff;
+    padding: 0px 8px 0px 5px;
+}
+
+.input-box input{
+width: 100%;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1em;
+}
+
+.input-box input:focus~label
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.sign-up-box button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: #fff;
+   margin-left: 90px;
+}
+
+.sign-up-box button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+top-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    border-top: 2px solid grey;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright p{
+    margin-left: 150px;
+}
+
