@@ -182,52 +182,7 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
-  /*.slide-text{
-   position: absolute;
-   color: white;
-   font-size: 50px;
-   
-   }
-
-   .slide:nth-child(1) .slide-text {
-    top: 40%;
-    right: 26%;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 16px 20px;
-  }
-
-  .slide:nth-child(2) .slide-text {
-   top: 40%;
-   right: 15%;
-   text-align: center;
-   background-color: transparent;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 16px 5px;
-  }
-
-  .slide:nth-child(3) .slide-text {
-    top: 30%;
-    right: 10%;
-   text-align: center;
-   background-color: transparent;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 16px 10px;
-  }
-
-  .slide:nth-child(4) .slide-text {
-    top: 40%;
-    right: 26%;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 16px 20px;
-  }*/
+  
 
   
   
@@ -271,11 +226,7 @@ width: 100%;
     
     
   }
-  /* .gradient-text {
-    background: linear-gradient( rgb(116, 21, 139), orange); 
-    -webkit-background-clip: text;   
-    -webkit-text-fill-color: transparent; 
-  } */
+  
   
 
   .content{
@@ -652,7 +603,7 @@ input[type="range"] {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
   }
   
   .loan-form button:hover {

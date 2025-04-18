@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short-term Loans</title>
+  <link rel="stylesheet" href="index.css">
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/assets/the-logo.png" alt="Logo" />
+        
+      </div>
+  
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+      <div class="nav-links" id="navLinks">
+        <div class="nav-left">
+          <a href="#">Purchase Order Funding</a>
+          <a href="#">Short-Term Loan</a>
+          <a href="#">Life </a>
+        </div>
+        <div class="nav-right">
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="slider">
+      <figure>
+        <div class="slide">
+        <img src="/assets/financially-tied.jpg" alt="">
+     <h1 class="slide-text">Financially Tied?  <div class="gradient-text"><b> The Ant Capital's</b> </div>Got You!</h1>
+      </div>
+      <div class="slide">
+        <img src="/assets/financial-freedom.jpg" alt="">
+        <h1 class="slide-text">Getting a <div class="gradient-text"><b>Short-Term Personal Loan</b></div>  Has Never Been This Easy!</h1>
+      </div>
+      <div class="slide">
+  <img src="/assets/happy-clients.jpg" alt="">
+        <h1 class="slide-text">Borrow up to <div class="gradient-text"><b>R7,000 TODAY!</b></div> Get Approved, TODAY! And Receive Your Money <div class="gradient-text"><b>IMMEDIATELY!</b></div></h1>
+      </div>
+      <div class="slide">
+        <img src="/assets/financially-tied.jpg" alt="">
+        <h1 class="slide-text">Financially Tied? <div class="gradient-text"><b>The Ant Capital's</b></div> Got You!</h1>
+      </div>
+      </figure>
+    </div>
+
+  
+
+  
+
+
+ <div class="content">
+  <div class="intro-content"><h2>Whether it’s an emergency, an unexpected bill, or just a little extra to get you through the month, The Ant Capital has you covered with quick, easy, and flexible short-term personal loans.</h2></div>
+  
+ 
+<div class="calculator-wrapper">
+  <div class="form-section">
+    <h2>Try Out our Loan Calculator</h2>
+    <label for="loanAmount">How much do you need?</label>
+    <input type="number" id="loanAmount" min="100" max="7000" step="100" value="7000">
+    <input type="range" id="rangeSlider" min="100" max="7000" step="100" value="7000">
+
+    <label for="termSelect">Repayment Period</label>
+    <select id="termSelect">
+      <option value="1">1 month (First-time applicant)</option>
+      <option value="2">2 months (Repeat customer)</option>
+      <option value="3">3 months (Repeat customer)</option>
+    </select>
+  </div>
+
+  <div class="result-section">
+    <h3>Your Repayment</h3>
+    <p>Monthly repayment:</p>
+    <p class="highlight" id="monthlyPay">R0</p>
+    <p>Total repayment:</p>
+    <p class="highlight" id="totalPay">R0</p>
+  </div>
+</div>
+<a href="#loanForm"><button>Apply Now</button></a>
+</div>
+
+
+<!-- WhatsApp Link -->
+<!-- Email link -->
+<section class="why-choose">
+<h2>Why Choose Our Loans?
+</h2>
+<div class="choose-grid">
+  <div class="choose-card">
+    <div class="icon">⚡</div>
+    <h3>Same-Day Approval</h3>
+    <p>No long waits or unnecessary paperwork.</p>
+  </div>
+  <div class="choose-card">
+    <div class="icon">🔄</div>
+    <h3>Instant Payouts</h3>
+    <p>Money in your account immediately after approval.</p>
+  </div>
+  <div class="choose-card">
+    <div class="icon">📋</div>
+    <h3>Flexible Repayment Terms</h3>
+    <p>First-time applicants: Repay within one month.
+    </p>
+    <p>Repeat customers: Choose between two or three months.
+    </p>
+  </div>
+  <div class="choose-card">
+    <div class="icon"><img src="/assets/tick.svg" alt=""></div>
+    <h3>Easy Application</h3>
+    <p>Apply online, via WhatsApp, or email.</p>
+  </div>
+</div>
+
+</section>
+
+
+<div class="application-requirements">
+<h2>What You’ll Need to Apply</h2>
+
+<p> ✔️ 3x Recent Payslips</p>
+<p> ✔️ Your Last 3 Months’ Bank Statements</p>
+<p> ✔️ A Clear Copy of Your ID</p>
+</div>
+
+<div class="loan-form-section">
+  <h2>Loan Application Form</h2>
+  <p>Fill in your details and upload your required documents. We’ll be in touch soon!</p>
+
+  <form id="loanForm" class="loan-form">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="number" name="amount" placeholder="Loan Amount (R)" required>
+
+    <label>Upload 3x Recent Payslips</label>
+    <input type="file" name="payslips" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+    <label>Upload Last 3 Months’ Bank Statements</label>
+    <input type="file" name="bankstatements" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+    <label>Upload a Clear Copy of Your ID</label>
+    <input type="file" name="idcopy" accept=".pdf,.jpg,.jpeg,.png" required>
+
+    <button type="submit">Submit Application</button>
+    <div id="formMessage" style="display:none; margin-top: 20px;"></div>
+  </form>
+</div>
+
+<div class="apply-section">
+  <h2>Other  Ways to Apply:</h2>
+  <p>Prefer WhatsApp or Email? Reach out directly!</p>
+
+  <div class="contact-methods">
+    <a href="https://wa.me/27615874251?text=Hello%20I%20would%20like%20to%20apply%20for%20a%20loan" target="_blank" class="btn whatsapp">
+      WhatsApp Us
+    </a>
+    <a href="mailto:credit@theantcapital.co.za" class="btn email">
+      Email Us
+    </a>
+    
+  </div>
+</div>
+</section>
+
+<!-- <section class="questions-section">
+  <h2 class="faq">Frequently Asked Questions</h2>
+  
+<div class="container">
+  <details>
+      <summary> How much can I borrow?</summary>
+      <div class="content">
+  <span>You can borrow up to R7,000, depending on your affordability and application approval.</span>
+</div>
+</details>
+
+<details>
+<summary>How long do I have to repay the loan?</summary>
+<div class="content">
+  <ul>
+    <li>First-time applicants must repay the loan within one month.</li>
+    <li>Repeat customers can choose a two- or three-month repayment period.</li>
+  </ul>
+
+</div>
+</details>
+
+
+  <details>
+      <summary>How long does it take to get approved and receive the money?</summary>
+      <div class="content">
+      <span>We offer same-day approval, and once approved, your money is instantly paid into your account.</span>
+</div>
+</details>
+
+<details>
+<summary> What documents do I need to apply?</summary>
+<div class="content">
+  <ul>
+    <li>📌 3x Recent Payslips</li>
+    <li>📌 3 Months’ Latest Bank Statements</li>
+    <li>📌 Copy of Your ID
+    </li>
+  </ul>
+  </div>
+</details>
+
+
+<details>
+<summary>How do I apply?</summary>
+<div class="content">
+  You can apply online, via WhatsApp at 061 587 4251, or by emailing credit@theantcapital.co.za.
+</div>
+</details>
+
+</section>  -->
+
+
+  <!-- <style>
+    :root {
+      --purple: #6a1b9a;
+      --orange: #fb8c00;
+      --neutral-light: #f4f4f4;
+      --neutral-dark: #333;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--neutral-light);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      color: var(--neutral-dark);
+    }
+
+    h2, h3 {
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    input[type="number"] {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .output {
+      margin-top: 2rem;
+      background: var(--purple);
+      color: var(--white);
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+
+    .highlight {
+      color: var(--orange);
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="logo">
+      <img src="/mnt/data/IMG-20250328-WA0010.jpg" alt="Ant Capital Logo" />
+      <h1>THE ANT CAPITAL</h1>
+    </div>
+
+    <h2>How much do you need?</h2>
+    <input type="number" id="loanAmount" min="100" max="7000" step="100" value="7000" />
+    <input type="range" id="rangeSlider" min="100" max="7000" value="7000" step="100" />
+
+    <h3>Repayment period</h3>
+    <select id="termSelect">
+      <option value="1">1 month (First-time applicant)</option>
+      <option value="2">2 months (Repeat customer)</option>
+      <option value="3">3 months (Repeat customer)</option>
+    </select>
+
+    <div class="output" id="results">
+      <p>Monthly repayment: <span class="highlight" id="monthlyPay">R0</span></p>
+      <p>Total repayment: <span class="highlight" id="totalPay">R0</span></p>
+    </div>
+  </div>
+
+  <script>
+    const amountInput = document.getElementById('loanAmount');
+    const slider = document.getElementById('rangeSlider');
+    const termSelect = document.getElementById('termSelect');
+
+    amountInput.addEventListener('input', () => {
+      slider.value = amountInput.value;
+      calculate();
+    });
+
+    slider.addEventListener('input', () => {
+      amountInput.value = slider.value;
+      calculate();
+    });
+
+    termSelect.addEventListener('change', calculate);
+
+    function calculate() {
+      const loan = parseFloat(amountInput.value);
+      const months = parseInt(termSelect.value);
+      const interest = loan * 0.1; // 10% flat rate
+      const total = loan + interest;
+      const monthly = total / months;
+
+      document.getElementById('monthlyPay').textContent = 'R' + monthly.toFixed(0);
+      document.getElementById('totalPay').textContent = 'R' + total.toFixed(0);
+    }
+
+    window.onload = calculate;
+  </script> -->
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="/assets/the-logo.png" >
+        </div>
+        <p>Providing innovative funding solutions to help businesses grow and succeed.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Purchase Order Funding</a></li>
+          <li><a href="#">Short Term Loans</a></li>
+          <li><a href="#">Life</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Subscribe</h4>
+        <p>Stay updated with our latest news and offers.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 The Ant Capital. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+</div> 
+<script src="index.js"></script>
+</body>
+</html>
