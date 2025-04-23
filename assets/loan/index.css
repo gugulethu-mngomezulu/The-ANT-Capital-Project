@@ -118,10 +118,10 @@ body {
     }
   }
 
-  .slider{
+  /* .slider{
     overflow:hidden;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
   }
 
   .slider figure{
@@ -146,15 +146,15 @@ body {
     padding: 16px 24px;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px); /* subtle background blur */
+    backdrop-filter: blur(4px); 
     -webkit-backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.2); /* soft transparent bg */
+    background-color: rgba(0, 0, 0, 0.2); 
     transition: all 0.4s ease;
   }
   
-  /* Positioning tweaks per slide */
-  .slide:nth-child(1) .slide-text {
-    top: 40%;
+  
+  /*.slide:nth-child(1) .slide-text { 
+     top: 40%;
     right: 26%;
   }
   
@@ -225,9 +225,32 @@ width: 100%;
     }
     
     
+  } */
+  
+  .banner-wrap{
+    background-image: url(/assets/loan/assets/customer.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 70px;
+   
   }
-  
-  
+
+  .banner-wrap h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    position: absolute;
+    right: 40%;
+   bottom: 60%;
+
+   
+  }
 
   .content{
     z-index: 0;
@@ -809,4 +832,85 @@ input[type="range"] {
   }
 
   
+  @media (max-width: 768px) {
+    .slide-text {
+      font-size: 20px;
+      padding: 10px 16px;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      top: 50%;
+      right: auto !important; /* override desktop right values */
+    }
   
+    .slide:nth-child(2) .slide-text,
+    .slide:nth-child(3) .slide-text {
+      width: 90%;
+    }
+  
+    .slider figure img {
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .calculator-wrapper {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+      width: 90%;
+      margin: 30px auto;
+    }
+  
+    .content button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .why-choose h2 {
+      font-size: 1.5rem;
+    }
+  
+    .choose-grid {
+      gap: 15px;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .application-requirements {
+      margin: 40px 20px;
+      text-align: center;
+    }
+  
+    .application-requirements p {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .loan-form-section {
+      padding: 20px 10px;
+    }
+  
+    .loan-form-section h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-top {
+      padding: 20px 10px;
+    }
+  
+    .footer-logo {
+      font-size: 1.5rem;
+    }
+  
+    .subscribe-form input[type="email"],
+    .subscribe-form button {
+      width: 100%;
+    }
+  }
