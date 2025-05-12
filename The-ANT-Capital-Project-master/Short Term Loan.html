@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short-term Loans</title>
+  <link rel="stylesheet" href="Short Term Loan.css">
+  <link rel="shortcut icon" href="assest/white_ant-capital_logo-removebg-preview.png" type="image/x-icon">
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assest/theant-removebg-preview.png" alt="Logo" />
+        </a>
+      </div>
+      
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="nav-links" id="nav-links">
+        <div class="nav-left">
+          <a href="PO Form.html" class="nav-link ">Purchase Order Funding</a>
+          <a href="Short Term Loan.html" class="nav-link">Short-term Loans</a>
+          
+        </div>
+        <div class="nav-right">
+          <a href="About Us.html" class="nav-link">About Us</a>
+          <a href="Contact Us.html" class="nav-link">Our Team</a>
+          <a href="Our Team.html" class="nav-link">Contact Us</a>
+          <a href="#" class="nav-link">Blog</a>
+        </div>
+      </div>
+    </nav>
+    
+    
+      <section class="po-header" style="background-image: url('assest/pexels-ekaterina-bolovtsova-4868390.jpg');">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <h1>Get a Loan up to R7,000 Today — Same-day Approval and Instant Payout!</h1>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div class="container">
+          <h1> Quick, Easy, and Flexible Short-term Personal Loans</h1>
+        <p>We understand the pressure of juggling monthly expenses. That’s why our short-term loans are quick, flexible, and built for you. Apply anytime, anywhere—online, through WhatsApp, or email. Approval happens in minutes, and the cash is in your account immediately.</p>
+        </div>
+        </section>
+
+<div class="content">
+  <div class="intro-content">
+    <section class="why-choose">
+        <h2>Why Choose Our Short-term Loans?
+        </h2>
+        <p>Whether it’s an emergency, an unexpected bill, or just a little extra to get you through the month, The Ant Capital has you covered with quick, easy, and flexible short-term personal loans.</p></div>
+
+        <div class="choose-grid">
+            <div class="step-box">
+            <div class="circle">1</div>
+            <h3>Same-Day Approval</h3>
+            <p>No long waits or unnecessary paperwork.</p>
+          </div>
+          <div class="step-box">
+            <div class="circle">2</div>
+            <h3>Instant Payouts</h3>
+            <p>Money in your account immediately after approval.</p>
+          </div>
+          <div class="step-box">
+            <div class="circle">3</div>
+            <h3>Flexible Repayment Terms</h3>
+            <p>First-time applicants: Repay within one month.
+            </p>
+            <p>Repeat customers: Choose between two or three months.
+            </p>
+          </div>
+          <div class="step-box">
+            <div class="circle">4</div>
+            <h3>Easy Application</h3>
+            <p>Apply online, via WhatsApp, or email.</p>
+          </div>
+        </div>
+        
+        </section>
+  <div class="calculator-wrapper">
+  <div class="form-section">
+    <h2>Try Out our Loan Calculator</h2>
+    <label for="loanAmount">How much do you need?</label>
+    <input type="number" id="loanAmount" min="100" max="7000" step="100" value="7000">
+    <input type="range" id="rangeSlider" min="100" max="7000" step="100" value="7000">
+
+    <label for="termSelect">Repayment Period</label>
+    <select id="termSelect">
+      <option value="1">1 month (First-time applicant)</option>
+      <option value="2">2 months (Repeat customer)</option>
+      <option value="3">3 months (Repeat customer)</option>
+    </select>
+  </div>
+
+  <div class="result-section">
+    <h3>Your Repayment</h3>
+    <p>Monthly repayment:</p>
+    <p class="highlight" id="monthlyPay">R0</p>
+    <p>Total repayment:</p>
+    <p class="highlight" id="totalPay">R0</p>
+  </div>
+</div>
+<a href="#loanForm"><button>Apply Now</button></a>
+</div>
+
+<div class="application-requirements">
+<h2>What You’ll Need to Apply</h2>
+
+<p> ✔️ 3x Recent Payslips</p>
+<p> ✔️ Your Last 3 Months’ Bank Statements</p>
+<p> ✔️ A Clear Copy of Your ID</p>
+</div>
+
+<div class="loan-form-section" id="loan-form-section">
+  <h2>Loan Application Form</h2>
+  <p>Fill in your details and upload your required documents. We’ll be in touch soon!</p>
+
+  <form id="loanForm" class="loan-form">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="number" name="amount" placeholder="Loan Amount (R)" required>
+
+    <label>Upload 3x Recent Payslips</label>
+    <input type="file" name="payslips" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+    <label>Upload Last 3 Months’ Bank Statements</label>
+    <input type="file" name="bankstatements" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+    <label>Upload a Clear Copy of Your ID</label>
+    <input type="file" name="idcopy" accept=".pdf,.jpg,.jpeg,.png" required>
+
+    <button type="submit">Submit Application</button>
+    <div id="formMessage" style="display:none; margin-top: 20px;"></div>
+  </form>
+</div>
+
+<div class="apply-section">
+  <p>Other  Ways to Apply:</p>
+  <p>Prefer WhatsApp or Email? Reach out directly!</p>
+
+  <div class="contact-methods">
+    <a href="https://wa.me/27615874251?text=Hello%20I%20would%20like%20to%20apply%20for%20a%20loan" target="_blank" class="btn whatsapp">
+      WhatsApp Us
+    </a>
+    <a href="mailto:credit@theantcapital.co.za" class="btn email">
+      Email Us
+    </a>
+    
+  </div>
+</div>
+</section>
+<div class="bottom-part">
+<section class="faq-section">
+  <h2>Frequently Asked Questions(FAQs)</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">1. How much can I borrow with The Ant Capital's Short-term Personal Loan?</div>
+      <div class="faq-answer">
+        You can borrow any amount up to R7,000, depending on your affordability and credit profile.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. What do I need to apply for a personal loan?</div>
+      <div class="faq-answer">
+        To apply, simply provide:<br><br>
+        • A copy of your ID<br>
+        • 3 most recent payslips<br>
+        • 3 months’ latest bank statements
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. How long does it take to get approved and receive the money?</div>
+      <div class="faq-answer">
+        Your application is processed and approved on the same day, and the money is instantly transferred to your account once approved.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. Do you check credit and affordability?</div>
+      <div class="faq-answer">
+        Yes, we conduct credit checks and assess your affordability to ensure responsible lending.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. Do you offer loan consolidations?</div>
+      <div class="faq-answer">
+        No, The Ant Capital does not offer loan consolidation services. Our focus is on short-term personal loans only.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section><img src="assest/pexels-ivan-samkov-4624904.jpg" alt=""></section>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col logo-col">
+      <a href="index.html"><img src="assest/footer-logo.png" alt="Logo" class="footer-logo" /></a>
+      <p>Providing innovative funding solutions to help businesses grow and succeed.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/27721234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Our Team.html">Our Team</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="PO Form.html">Purchase Order Funding</a></li>
+        <li><a href="Short Term Loan.html">Short-term Loans</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <p>Stay updated with our latest news and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 The Ant Capital. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="cookies.html">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+<!-- WhatsApp CTA Button -->
+<div class="whatsapp-cta">
+<a href="https://api.whatsapp.com/send/?phone=27712758419&text&type=phone_number&app_absent=0" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span>WhatsApp Us<br></span>
+</a>
+</div>
+<script src="Short Term Loan.js"></script>
+</body>
+</html>

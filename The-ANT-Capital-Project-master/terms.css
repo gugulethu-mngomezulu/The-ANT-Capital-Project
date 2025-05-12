@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  @media (max-width:768px){
+
+  .link{
+    display: visible;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+  color: white;
+ margin: 20px 100px 0 0;
+ font-size: 1.25rem;
+
+  }
+
+  .dropdown{
+    position:relative;
+  }
+
+  .dropdown-menu a{
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+
+  }
+
+  .dropdown-menu a:hover{
+    color: #999;
+  }
+
+  .dropdown-menu svg{
+    fill: white;
+  }
+
+  .dropdown-menu{
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: calc(100% + .25rem);
+    background-color: rgb(64, 0, 128);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    
+   
+
+  }
+
+  .dropdown-menu {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  .dropdown-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+   
+  }
+
+  /* .dropdown > .link:focus + .dropdown-menu{
+    opacity: 1;
+  } */
+
+
+  .dropdown-menu.active{
+    opacity: 1;
+  }
+}
+@media (min-width:769px){
+.link{
+  display: none;
+}
+
+.dropdown-menu{
+  display: none;
+}
+}
+
+  
+  nav{
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(64, 0, 128);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+  }
+
+  .left-nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav img{
+    width: 100px;
+    height: 65px;
+    padding-top: 5px;
+  }
+  h4{
+    color: #f9f9f9f9;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 30px;
+   
+  }
+ .content{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 50px;
+    overflow: auto;
+  }
+
+  .menu{
+    margin-top: 80px;
+    width: 20vw;
+position: fixed;
+top: 0;
+left: 0;
+    overflow:hidden;
+    height: 100vh;
+    z-index: 1000;
+    padding: 0 0 0 40px;
+    
+    
+  }
+
+  .menu li{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 12px;
+    
+  }
+
+  .menu li:hover{
+    text-decoration: underline;
+    color: #999;
+  }
+
+  .right-arrow{
+    width: 20px;
+    height: 20px;
+  }
+
+  .home p{
+    color: orangered;
+    font-size: 1rem;
+    
+  }
+
+  .home p:hover{
+    text-decoration: 1px solid orangered underline;
+  }
+  .home svg{
+  fill: orangered;
+  }
+
+  .home{
+    padding-bottom: 50px;
+    border-bottom: 5px solid #6a1b9a;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+    
+    
+  }
+
+  .home:hover{
+color: #999;
+text-decoration: underline;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .policies{
+    margin-left: 25%;
+  position: relative;
+  z-index: 1;
+  width: 70vw;
+
+  
+    
+   
+  }
+
+  h1{
+    margin: 80px 0 20px 0;
+    font-size: 40px;
+    font-weight: 800;
+    
+  }
+
+  
+  h3{
+    font-size: 26px;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  #introduction, #company-info, #description, #eligibility, #responsibilities, #account, #payment-terms, #limits, #termination, #intellect, #third-party, #governing, #changes{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #999;
+  }
+
+  
+  .sub{
+    font-size: 20px ;
+  }
+
+  #introduction p, #account p, #payment-terms p, #intellect p, #governing p, .changes p{
+    font-size: 17px;
+  }
+
+  .after-sub{
+    margin: 10px 0 20px 30px;
+    font-size: 17px;
+
+  }
+
+  #contact a{
+    color: rgb(64, 0, 128);
+    text-decoration: underline;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 769px){
+    .whatsapp-cta{
+      display: none;
+    }
+  }
+
+
+  @media (max-width:768px){
+    .menu{
+        display: none;
+    }
+
+    .policies{
+        width: 100vw;
+        margin:10px;
+        flex-wrap: wrap;
+    }
+
+     /* WhatsApp CTA Button */
+.whatsapp-cta {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 6000;
+  display: visible;
+  color: white;
+  }
+  
+  .whatsapp-cta a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(64, 0, 128);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+  }
+  
+  .whatsapp-cta a:hover {
+  background-color: orangered;
+  
+  }
+  
+  .whatsapp-cta i {
+  font-size: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  }
+
+  .date{
+    display: flex;
+    flex-direction: column;
+  }
+
+  a{
+    color:black;
+  }
+
+
+
+  

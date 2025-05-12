@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Order Funding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="PO Form.css" />
+  <link rel="shortcut icon" href="assest/white_ant-capital_logo-removebg-preview.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assest/theant-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+    
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-left">
+        <a href="PO Form.html" class="nav-link ">Purchase Order Funding</a>
+        <a href="Short Term Loan.html" class="nav-link">Short-term Loans</a>
+        
+      </div>
+      <div class="nav-right">
+        <a href="About Us.html" class="nav-link">About Us</a>
+        <a href="Contact Us.html" class="nav-link">Our Team</a>
+        <a href="Our Team.html" class="nav-link">Contact Us</a>
+        <a href="#" class="nav-link">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="po-header" style="background-image: url('assest/pexels-cottonbro-6334887.jpg');">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Fast, Hassle-Free Purchase Order Funding at Your Fingertips 
+      </h1>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <div class="container">
+      <h1>You Have the Purchase Order. We Have the Funds.</h1>
+      <p>
+        We finance small businesses with government purchase orders in KZN and the Eastern Cape. With over 5 years of fast, hassle-free funding support for local entrepreneurs.
+      </p>
+      <p>
+        Be part of 150+ SMMEs who trust <strong>The Ant Capital</strong> to help them fulfill their purchase orders—quickly and without the usual hassles.
+      </p>
+      <h3>We Ensure You Deliver On Time.</h3>
+      <p>
+        Apply for funding in under two minutes, get approved within 2 to 4 days, and have your suppliers paid within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <section class="po-info">
+    <div class="container">
+      <h2 class="section-title">How Our Purchase Order Funding Works</h2>
+      <p class="section-subtitle">Our streamlined process gets you from application to funding in just a few simple steps.</p>
+      <div class="steps-grid">
+        <div class="step-box">
+          <div class="circle">1</div>
+          <h4>Apply Online</h4>
+          <p>Complete our simple application form with your business details and funding needs.</p>
+        </div>
+        <div class="step-box">
+          <div class="circle">2</div>
+          <h4>Quick Review</h4>
+          <p>Our team reviews your application and contacts you within 24 hours.</p>
+        </div>
+        <div class="step-box">
+          <div class="circle">3</div>
+          <h4>Submit Documents</h4>
+          <p>Upload your purchase order and all required documents for verification.</p>
+        </div>
+        
+        <div class="step-box">
+          <div class="circle">4</div>
+          <h4>Approval</h4>
+          <p>Receive your customized funding offer with clear terms and conditions.</p>
+        </div>
+        <div class="step-box">
+          <div class="circle">5</div>
+          <h4>Get Funded</h4>
+          <p>Sign your agreement and  suppliers get paid directly.</p>
+        </div>
+        <div class="step-box">
+          <div class="circle">6</div>
+          <h4>Repay</h4>
+          <p>Settle the funding within 30 days after delivery as per the agreement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="po-form-section" id="po-form-section">
+    <div class="container">
+      <h2>Apply for Purchase Order Funding</h2>
+      <form class="po-form">
+        <label for="companyname">Company Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="company">Last Name:</label>
+        <input type="text" id="company" name="company" required />
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="client">Client:</label>
+        <input type="text" id="client" name="client" required />
+        <small>Which government institution awarded you the purchase order? e.g. Ugu District Municipality</small>
+
+        <label for="amount">How much funding are you requesting?</label>
+        <input type="text" id="amount" name="amount" placeholder="e.g. 500000" required />
+        <small>Enter the total amount you are applying for.</small>
+  
+        <label for="project">Project Description:</label>
+        <input type="text" id="project" name="project" rows="4" required>
+        <small>For example: supply and delivery of 100 laptops</small>
+
+
+        <h3>Upload Supporting Documents (Optional)</h3>
+        <p><i>Speed up your funding. Upload your documents below to fast-track your application. Just follow the simple instructions.</i></p>
+        
+        <label for="purchaseOrder">1. Purchase Order or Letter of Appointment</label>
+        <input type="file" id="purchaseOrder" name="purchaseOrder" required />
+
+        <label for="supplierQuote">2. Supplier Quote addressed to The Ant Capital</label>
+        <input type="file" id="supplierQuote" name="supplierQuote" required />
+
+        <label for="csdReport">3. Latest Central Supplier Database (CSD) Report</label>
+        <input type="file" id="csdReport" name="csdReport" required />
+
+        <label for="idCopies">4. ID copies of Directors</label>
+        <input type="file" id="idCopies" name="idCopies" required />
+
+        <p class="note"><em>It’s advisable to confirm with your client if they are willing to enter into a deed of cession agreement before applying.</em></p>
+
+        <button type="submit">Submit Application</button>
+        <div class="alt-contact">
+          <p>Prefer not to use the form?</p>
+          <div class="cta-buttons">
+            <a href="https://api.whatsapp.com/send/?phone=27712758419&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp-btn">Apply via WhatsApp</a>
+            <a href=" info@theantcapital.co.za" class="email-btn">Apply via Email</a>
+          </div>
+        </div>
+        
+        </form>
+    </div>
+  </section>
+
+  <div class="bottom-part">
+  <section class="faq-section">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <div class="faq-container">
+  
+      <div class="faq-item">
+        <div class="faq-question">1. What is Purchase Order Funding?</div>
+        <div class="faq-answer">
+          Purchase Order Funding is a financial solution that provides businesses with the necessary capital to fulfill large purchase orders by covering production and delivery costs before the customer payment is received.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question">2. Who is eligible for Purchase Order Funding?</div>
+        <div class="faq-answer">
+          We fund SMMEs awarded supply and delivery purchase orders by government institutions in KwaZulu-Natal and Eastern Cape, needing R35 000 or more. The institution must be willing to enter into a deed of cession agreement.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question">3. What documents are required to apply for PO funding?</div>
+        <div class="faq-answer">
+          To apply, you'll need:<br><br>
+          • A valid Purchase Order or Letter of Appointment with project specifications<br>
+          • Supplier Quote addressed to The Ant Capital<br>
+          • Latest Central Supplier Database (CSD) Report with login details<br>
+          • ID copies of Directors<br><br>
+          It’s advisable to confirm with your client if they are willing to enter into a deed of cession agreement before applying.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question">4. Who can benefit from PO Finance?</div>
+        <div class="faq-answer">
+          PO Finance is ideal for small to medium-sized businesses experiencing cash flow challenges when fulfilling large orders. It helps businesses maintain growth without financial strain and allows them to secure more purchase orders.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question">5. Do you charge VAT on your services?</div>
+        <div class="faq-answer">
+          Yes, The Ant Capital is a registered VAT vendor, and we charge VAT on all taxable goods and services as per South African tax laws.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question">6. Do I need good credit for PO Funding?</div>
+        <div class="faq-answer">
+          Not necessarily. The money advanced is specifically for delivering a purchase order. The value of a valid, successfully delivered PO secures the advance. We consider your credit history to assess risk, but our open-minded model focuses more on the PO itself.
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <img src="assest/pexels-rdne-7414284.jpg" alt="">
+</div>
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col logo-col">
+       <a href="index.html"><img src="assest/footer-logo.png" alt="Logo" class="footer-logo" /></a>
+        <p>Providing innovative funding solutions to help businesses grow and succeed.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/27721234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Our Team.html">Our Team</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="PO Form.html">Purchase Order Funding</a></li>
+          <li><a href="Short Term Loan.html">Short-term Loans</a></li>
+          
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Subscribe</h4>
+        <p>Stay updated with our latest news and offers.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 The Ant Capital. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="cookies.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <script src="script.js"></script>
+
+  <!-- WhatsApp CTA Button -->
+<div class="whatsapp-cta">
+  <a href="https://api.whatsapp.com/send/?phone=27712758419&text&type=phone_number&app_absent=0" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp Us<br></span>
+  </a>
+</div>
+<script src="PO Form.js"></script>
+</body>
+</html>
